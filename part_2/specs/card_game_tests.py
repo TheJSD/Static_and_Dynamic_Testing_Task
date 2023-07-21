@@ -13,3 +13,11 @@ class TestCardGame(unittest.TestCase):
     def test_check_for_ace(self):
         test_result = CardGame.check_for_ace(self, self.card1)
         self.assertEqual(True, test_result)
+
+    def test_check_for_highest_card(self):
+        highest_card = CardGame.highest_card(self, self.card1, self.card2)
+        self.assertEqual(self.card2, highest_card)
+    
+    def test_cards_total(self):
+        cards = [self.card1, self.card2, self.card3]
+        self.assertEqual("You have a total of 16", CardGame.cards_total(self, cards))

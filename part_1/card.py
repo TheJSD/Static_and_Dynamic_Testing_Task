@@ -26,5 +26,7 @@ def cards_total(self, cards):
   total
   for card in cards:
     total += card.value
+    # indentation for return is wrong - needs to be one indentation backwards so that it's not in the for loop (it would only add the first card to the total and then finish the function).
+    # below also has a problem with concatenation - cannot combine a string (the words) with an integer (the total) in python - total needs to be turned into a string.
     return "You have a total of" + total
   
