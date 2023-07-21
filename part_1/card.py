@@ -20,7 +20,7 @@ class CardGame:
     return card2
   
 
-
+# not indented in line with the rest of the class functions - needs to be indented to be captured within CardGame class.
 def cards_total(self, cards):
   # "total" is undefined, needs a starting value (0 makes the most sense here) i.e. total = 0
   total
